@@ -1,3 +1,9 @@
+* **
+因为工作需要，通读Dubbo的源代码，为了防止自己忘记，因此在这个源码的基础上加上自己加的中文注释，方便国内的程序员朋友们吧。
+框架的总体概括，请见：document.txt
+源码通读过程中，产生的问题，请见FAQ.txt
+* **
+
 [![Build Status](https://travis-ci.org/alibaba/dubbo.svg?branch=master)](https://travis-ci.org/alibaba/dubbo) [![Gitter](https://badges.gitter.im/alibaba/dubbo.svg)](https://gitter.im/alibaba/dubbo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Dubbo is a distributed, high performance RPC framework which empowers applications with service import/export capabilities.

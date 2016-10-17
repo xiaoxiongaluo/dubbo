@@ -47,6 +47,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             if (args == null || args.length == 0) {
+                //从CONTAINER_KEY取容器，要么使用默认的Spring容器
                 String config = ConfigUtils.getProperty(CONTAINER_KEY, loader.getDefaultExtensionName());
                 args = Constants.COMMA_SPLIT_PATTERN.split(config);
             }
