@@ -1,4 +1,5 @@
-﻿dubbo-common
+﻿“
+dubbo-common
 	公共逻辑包，包括Util类和通用模型。
 dubbo-remoting
 	远程通讯模块，相当于Dubbo协议的实现，如果RPC用RMI协议则不需要此包。
@@ -14,4 +15,15 @@ dubbo-config
 	配置模块，是Dubbo对外的API，用户通过Config使用Dubbo，隐藏Dubbo的所有细节。
 dubbo-container
 	容器模块，是一个Standlone的容器，以简单的Main加载Spring启动，因为服务通常不需要Tomcat/Jboss等Web容器的特性，没必要用Web容器加载服务。
+
+
+	container为服务层，用于部署运行服务，没有在层中画出。
+	protocol层和proxy层都放在rpc模块中，这两层是rpc的核心，在不需要集群时（只有一个提供者），可以只是用这两层完成rpc调用。
+	transport层和exchange层都放在remoting模块中，为rpc调用的通讯基础。
+	serialize层放在common模块中，以便更大程度服用。
+”
+
+	以上文段均摘自于网上《Dubbo源码解析》一书，感谢该作者的分享，但是因为该书没有著名作者，所以无法在此留下作者签名，见谅。
+	下载地址：http://songwie.com/attached/dubbo/dubbo2.0.pdf。
+	如有侵权，请联系删之。
 	
